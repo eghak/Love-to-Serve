@@ -1,0 +1,35 @@
+.welcome {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  background-color: #ffffff8e;
+  /* text-align: center; */
+}
+
+.welcomeTitle {
+  font-size: 50px;
+  color: #136b7a;
+  font-style: bold;
+}
+
+.welcomeBtn {
+  display: block;
+  margin: 30px;
+  width: 200px;
+}
+
+@media (max-width: 800px) {
+  .welcome {
+    flex-direction: column;
+  }
+}

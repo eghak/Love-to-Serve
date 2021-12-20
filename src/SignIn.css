@@ -1,0 +1,46 @@
+.signIn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #ffffff8e;
+}
+
+h2 {
+  color: #136b7a;
+}
+
+label,
+input {
+  display: block;
+  height: 25px;
+  width: 250px;
+}
+
+img {
+  width: 15rem;
+}
+
+button {
+  margin-top: 10px;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  border:none;
+  background: #358e9d;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .signIn {
+    flex-direction: column;
+  }
+}

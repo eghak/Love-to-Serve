@@ -1,0 +1,39 @@
+.home {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 10%;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #ffffff8e;
+}
+
+.homeTitle {
+    color: #136b7a;
+    font-family: Apple Chancery, cursive;
+    font-size: 50px;
+    font-style: bold;
+}
+
+.homeP {
+  font-size: 20px;
+  font-style: bold;
+}
+
+.homeBtn {
+  margin: 10px;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .home {
+    flex-direction: column;
+  }
+}

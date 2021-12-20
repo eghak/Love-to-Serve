@@ -1,0 +1,52 @@
+.soPostSubmitted {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #ffffff8e;
+}
+
+img {
+  width: 15rem;
+}
+
+.soPostSubmittedTitle {
+  font-size: 25px;
+  color: #136b7a;
+  font-style: bold;
+  text-align: center;
+}
+
+.soPostSubmittedP {
+  color: #136b7a;
+}
+
+.soPostSubmittedBtn {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background: #358e9d;
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin: 30px;
+}
+
+.signOutBtn {
+    background-color: rgb(168, 27, 27);
+  }
+
+@media (max-width: 800px) {
+  .soPostSubmitted {
+    flex-direction: column;
+  }
+}
