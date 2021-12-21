@@ -15,7 +15,8 @@ const { PORT, DATABASE_URL } = process.env;
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.resolve(__dirname, "../build")));
+// app.use(express.static(path.resolve(__dirname, "../build")));
+app.use(express.static(path.resolve(`${__dirname}/../build`)));
 
 massive({
   connectionString: DATABASE_URL,
@@ -48,10 +49,10 @@ app.delete("/api/sopost", sopostController.create);
 //(soList endpoint/routes)
 app.get("/api/solist", solistController.getAll);
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../build", "index.html"));
-});
-
 app.listen(PORT, () => {
   console.log(`Server listening on port ${SERVER_PORT}`);
+});
+
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
