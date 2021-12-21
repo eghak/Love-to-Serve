@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const massive = require("massive");
 const cors = require("cors");
+const path = require("path")
 
 const userController = require("./userController");
 const sopostController = require("./sopostController");
@@ -50,9 +51,9 @@ app.delete("/api/sopost", sopostController.create);
 app.get("/api/solist", solistController.getAll);
 
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${SERVER_PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
 
-app.get("/*", function (req, res) {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
